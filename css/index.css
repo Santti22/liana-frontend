@@ -1,0 +1,33 @@
+nav {
+   padding-left: 130px;
+   padding-right: 130px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   background-color: white;
+}
+a {
+   text-decoration: none !important;
+   color: white;
+}
+header.btn {
+   width: 178px;
+   text-align: left;
+}
+.form-control {
+   width: 130px !important;
+}
+.beginning {
+   background-color: #4c8930;
+   padding: 10px;
+   padding-right: 130px;
+}
+
+.dropdown-toggle::after {
+   margin-left: 70px;
+}
+.nav-link {
+   color: lightgray;
+}
+a.navbar-brand {
+width: 100px;
+}
