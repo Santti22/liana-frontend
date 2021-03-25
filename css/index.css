@@ -2,6 +2,7 @@
 body {
    max-width: 1400px;
    font-family: 'Open Sans', sans-serif;
+   line-height: 1.5;
 }
 /*First background to green, 46px height*/
 .beginning {
@@ -17,6 +18,14 @@ body {
    text-decoration: none;
    color: white;
    padding-right: 20px;
+}
+.link1 {
+   text-decoration: none;
+   color: white;
+}
+.link:hover,
+.link1:hover {
+   color: lightgray;
 }
 /*The language select list adjustments*/
 .ddown {
@@ -72,6 +81,11 @@ nav {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   filter: brightness(80%);
+}
+.parallax:hover {
+   filter: none;
+   text-decoration: underline white;
 }
 /*To show items over parallax- or normal image*/
 .overlay-text {
@@ -87,4 +101,32 @@ nav {
    font-size: 42px;
    margin-top: 143px;
    padding-bottom: 30px;
+}
+/*Middle images*/
+.mid-image {
+   position: relative;
+   margin-top: 50px;
+   width: 353px;
+   height: 224px;
+   filter: brightness(60%);
+   border-radius: 2%;
+   z-index: -1;
+}
+/* Text to middle of pic*/
+figcaption {
+   margin-top: -6.5em;
+   height: 5em;
+   width: 100%;
+   text-align: center;
+   z-index: 1;
+   color: white;
+   font-size: 20px;
+}
+.mid-image:hover {
+   filter: none;
+}
+/* Mid container with padding left and right */
+.mid {
+   padding-left: 130px;
+   padding-right: 130px;
 }

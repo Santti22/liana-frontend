@@ -19,8 +19,11 @@
     <!-- Font-awesome CSS-->
     <link rel="stylesheet" href="css/all.css" />
     <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="container-fluid">
     <main>
@@ -80,6 +83,7 @@
                 </li>
               </ul>
             </div>
+            <!--Form here (search)-->
             <div class="col">
               <form class="d-flex my-2 my-lg-0 floater">
                 <input
@@ -88,10 +92,7 @@
                   placeholder="Search"
                   aria-label="Search"
                 />
-                <button
-                  class="btn buttons text-end my-2 my-sm-0"
-                  type="submit"
-                >
+                <button class="btn buttons text-end my-2 my-sm-0" type="submit">
                   Search
                 </button>
               </form>
@@ -100,19 +101,54 @@
         </div>
       </nav>
       <!--Main contents-->
-      <div>
+      <div class="row ">
+        <!--Parallax image-->
         <div class="parallax">
           <div class="row">
             <div class="overlay-text">
-              <h1 class="overlay-text-margin">Software fueling digital marketing</h1>
+              <h1 class="overlay-text-margin">
+               <a class="link1" href="#">Software fueling digital marketing</a> 
+              </h1>
             </div>
             <div class="overlay-text ">
               <button class="btn buttons">Learn more</button>
             </div>
           </div>
         </div>
+        <!--The three images start here-->
+        <div class="col-12 row mid">
+          <div class="col-sm col-12 text-sm-center">
+            <figure >
+              <img class="mid-image" src="img/group.jpg" alt="group">
+              <figcaption><a class="link1" href="#">Company</a></figcaption>
+            </figure>
+          </div>
+          <div class="col-sm col-12 text-sm-center">
+            <figure class="p2">
+              <img class="mid-image" src="img/sales.jpg" alt="sales">
+              <figcaption><a class="link1" href="#">Products</a></figcaption>
+            </figure>
+          </div>
+          <div class="col-sm col-12 text-sm-center">
+            <figure class="p3">
+              <img class="mid-image" src="img/happy_worker.png" alt="happy">
+              <figcaption><a class="link1" href="#">Contact us</a></figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
-      <div>
+
+      <!--Icons and digits-->
+      <div class="row mt-5">
+        <div class="col">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="col">
+
+        </div>
+        <div class="col">
+
+        </div>
       </div>
     </main>
 
