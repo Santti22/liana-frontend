@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="css/reset.css" />
     <!-- My custom stylesheet -->
     <link rel="stylesheet" href="css/index.css" />
-    <!-- Font-awesome CSS-->
+    <!-- Font-awesome CSS and js-->
+    <script src="js/all.js"></script>
     <link rel="stylesheet" href="css/all.css" />
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -26,6 +27,7 @@
     />
   </head>
   <body class="container-fluid">
+    <!--Full page-->
     <main>
       <!--Head of the page-->
       <div class="dropdown beginning">
@@ -42,8 +44,10 @@
           In English
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Suomeksi</a>
+          <a class="dropdown-item" href="#">Auf Deutsch</a>
+          <a class="dropdown-item" href="#">En français</a>
           <a class="dropdown-item" href="#">På Svenska</a>
+          <a class="dropdown-item" href="#">Suomeksi</a>
         </div>
       </div>
       <!--Navigation-->
@@ -139,25 +143,151 @@
       </div>
 
       <!--Icons and digits-->
-      <div class="row mt-5">
-        <div class="col">
-          <i class="fas fa-briefcase"></i>
+      <div class="row mt-5 icons">
+        <div class="col-sm-12 col-lg text-md-center pt-md-2">
+          <div class=" d-inline-block">
+            <i class="fas fa-briefcase icon mb-2"></i>
+            <div class="d-inline-block">
+              <span class="h1" id="n1">3000</span> <br>
+              <span class="h6">Clients</span> 
+            </div>
+          </div>
         </div>
-        <div class="col">
-
+        <div class="col-sm-12 col-lg text-md-center pt-md-2">
+          <div class=" d-inline-block">
+            <i class="fas fa-id-badge icon mb-2"></i>
+            <div class="d-inline-block">
+              <span class="h1" id="n2">180</span> <br>
+              <span class="h6">Employees</span> 
+            </div>
+          </div>
         </div>
-        <div class="col">
-
+        <div class="col-sm-12 col-lg text-md-center pt-md-2">
+          <div class=" d-inline-block">
+            <i class="fas fa-globe icon mb-2"></i>
+            <div class="d-inline-block">
+              <span class="h1" id="n3">10000</span> <br>
+              <span class="h6">Daily users</span> 
+            </div>
+          </div>
         </div>
       </div>
+      <!--rss feed without rss-->
+      <div class="row feed mid">
+          <h1 class="text-center h2 col-12">Latest news</h1>
+          <div class="col-sm col-12 feedItems pr-2">
+            <span>27.07.2016</span>
+            <p>Liana Technologies and Encode Solutions merge to crate unique mobile solutions</p>
+          </div>
+          <div class="breaks mb-2"></div>
+          <div class="col-sm col-12 feedItems">
+            <span>28.01.2016</span>
+            <p>From a local startup to a global player: Liana Technologies among the forerunners
+              of digital marketing technology
+            </p>
+          </div>
+          <div class="breaks mb-2"></div>
+          <div class="col-sm col-12 feedItems">
+            <span>02.07.2016</span>
+            <p>Liana Technologies Hong Kong launched a series of digital marketing events in June</p>
+          </div>
+      </div>
+      <!--References-->
+      <div class="row mid references">
+        <h1 class="text-center h2 col-12 bottomheader">References</h1>
+        <div class="col-12 col-sm-6 col-lg pb-sm-2 text-center">
+          <img src="img/bosch.png" alt="bosch">
+          <div>
+            <h1 class="h4">Robert Bosch</h1>
+            <p>Bosch is a multinational engineering and electronics company.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg pb-sm-2 text-center">
+          <img src="img/bodyshop.png" alt="tbs">
+          <div>
+            <h1 class="h4">The Body Shop</h1>
+            <p>The Body Shop is a global beauty brand and it has more than 3,000
+              stores in more than 60 countries.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg text-center">
+          <img src="img/laplandh.png" alt="lh">
+          <div>
+            <h1 class="h4">Lapland Hotels</h1>
+            <p>Lapland Hotels is the largest and the most diverse hotel chain in Lapland.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg text-center">
+          <img src="img/ikea.png" alt="ikea">
+          <div>
+            <h1 class="h4">IKEA</h1>
+            <p>IKEA is a multinational furniture store.</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!--Newsletter-->
+      <div>
+        <div class="text-center references">
+          <h1 class="h2">Subscribe to our newsletter</h1>
+          <p>Follow our story and get the latest promotional <br> news about tour products and events</p>
+          <form class="form-inline former">
+            <input class=" mr-sm-2" type="search" placeholder="Your email address">
+            <button class="btn buttons up" type="submit">Submit</button>
+        </div>
+      </div>
+      <!--Footer-->
+      <footer class="mid">
+        <div class="row">
+          <div class="col-12 row">
+            <div class="col-6 text-start">
+              <p class="link font-weight-bold">Liana Technologies</p>
+            </div>
+            <div class="col-6 text-end">
+              <a class="link" href="#">Company</a>
+              <a class="link" href="#">Products</a>
+              <a class="link" href="#">Contact us</a>
+              <a class="link" href="#">News</a>
+              <a class="link" href="#">Intranet</a>
+            </div>
+          </div>
+          <div class="col-12 row bottom">
+            <div class="col-6 row text-start">
+              <div class="col">
+                <p><span class="font-weight-bold">Sales and inquiries</span><br>
+                  Email: sales@lianatech.com <br> 
+                  Phone: +358 10 387 7053
+                </p>
+              </div>
+              <div class="col bottomButton">
+                <button class="btn buttons">Contact us</button>
+              </div>
+            </div>
+            <div class="col-6 text-end bottomButton">
+              <a href="https://www.facebook.com/lianatech" target="_blank">
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x outer"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse inner"></i>
+                </span></a>
+              <a href="https://twitter.com/lianatech?lang=fi" target="_blank">
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x outer"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse inner"></i>
+                </span></a></a>
+              <a href="https://www.linkedin.com/company/liana-technologies/?originalSubdomain=fi" target="_blank">
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x outer"></i>
+                  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse inner"></i>
+                </span></a></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap js scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
       integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -168,5 +298,7 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
+    <!--My justom jquery file-->
+    <script src="js/index.js"></script>
   </body>
 </html>

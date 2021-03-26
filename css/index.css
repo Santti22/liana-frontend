@@ -4,7 +4,7 @@ body {
    font-family: 'Open Sans', sans-serif;
    line-height: 1.5;
 }
-/*First background to green, 46px height*/
+/*Beginning styles*/
 .beginning {
    padding-right: 140px;
    padding-top: 15px;
@@ -54,7 +54,8 @@ body {
    margin-right: 50px;
 }
 /*Navbar to specific width*/
-nav {
+nav,
+.mid {
    padding-left: 130px;
    padding-right: 130px;
 }
@@ -80,7 +81,7 @@ nav {
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: 100% auto;
    filter: brightness(80%);
 }
 .parallax:hover {
@@ -126,7 +127,117 @@ figcaption {
    filter: none;
 }
 /* Mid container with padding left and right */
-.mid {
-   padding-left: 130px;
-   padding-right: 130px;
+
+/*Icons at the middle*/
+.icons {
+   padding-left: 250px;
+   padding-right: 250px;
+}
+.icon {
+   margin-right: 50px;
+   font-size: 300%;
+   color: #4c8930;
+}
+/*Colour and margins for the feed*/
+.feed {
+   padding-top: 50px;
+   background-color: #eceeef;
+   margin-top: 75px;
+   padding-bottom: 50px;
+}
+/*Individual items*/
+.feedItems {
+   padding-top: 25px;
+   padding-bottom: 25px;
+   background-color: white;
+   border: 15px #eceeef;
+   margin-top: 50px;
+   width: 360px !important;
+}
+/*The date part*/
+.feedItems span {
+   color: gray;
+   font-size: 80%;
+}
+/*The actual text*/
+.feedItems p {
+   margin-top: 25px;
+   font-size: 120%;
+   font-weight: bold;
+}
+/*Empty space in feed*/
+.breaks {
+   width: 5px;
+   height: 100%;
+}
+/*References settings*/
+.references {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.bottomheader {
+   margin-bottom: 50px;
+}
+.references h1 {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.references img {
+   width: 100%;
+   border: solid gray;
+   border-width: 1px 1px;
+   border-radius: 5px 5px 0 0;
+   margin-bottom: -8px;
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+.references div div {
+   border-style: solid;
+   border: solid gray;
+   border-width: 1px 1px;
+   border-radius: 0 0 5px 5px;
+   padding-top: 30px;
+   padding-bottom: 40px;
+   height: 50%;
+}
+/*Newsletter settings*/
+.former {
+   padding-top: 16px;
+   width: auto;
+}
+.former input {
+  border-radius: 4px;
+  padding: 6px;
+  margin-top: 5px;
+  margin-right: -10px;
+  width: 440px;
+}
+.up {
+   margin-top: -4px;
+}
+/*Footer styles*/
+footer {
+   background-color: black;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.bottom {
+   color: white;
+}
+.bottomButton {
+   margin-top: 30px;
+}
+.bottomButton a {
+   padding-right: 20px;
+}
+.outer {
+   color: #4c8930;
+}
+.inner {
+   color: white;
+   margin-left: 15px;
+   font-size: 200%;
+}
+.fa-stack {
+   font-size: 70%;
 }
