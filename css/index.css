@@ -3,10 +3,11 @@ body {
    max-width: 1400px;
    font-family: 'Open Sans', sans-serif;
    line-height: 1.5;
+   width: 100%;
 }
 /*Beginning styles*/
 .beginning {
-   padding-right: 140px;
+   padding-right: 13%;
    padding-top: 15px;
    padding-bottom: 15px;
    background-color: #4c8930;
@@ -54,10 +55,9 @@ body {
    margin-right: 50px;
 }
 /*Navbar to specific width*/
-nav,
-.mid {
-   padding-left: 130px;
-   padding-right: 130px;
+nav{
+   padding-left: 12%;
+   padding-right: 12%;
 }
 /*Navbar links to a different colour*/
 .nav-link {
@@ -74,10 +74,14 @@ nav,
 }
 /*Parallax effect to front pages first image*/
 .parallax {
+   position: relative;
    background-image: url("analyst.jpg");
+   max-width: 1375px;
    width: 100%;
    min-height: 419px;
-   
+   margin-left: 12px;
+
+
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
@@ -103,12 +107,17 @@ nav,
    margin-top: 143px;
    padding-bottom: 30px;
 }
+.mid {
+   padding-left: 12%;
+   padding-right: 12%;
+}
 /*Middle images*/
 .mid-image {
    position: relative;
    margin-top: 50px;
-   width: 353px;
+   width: 320px;
    height: 224px;
+   object-fit: cover;
    filter: brightness(60%);
    border-radius: 2%;
    z-index: -1;
@@ -130,13 +139,17 @@ figcaption {
 
 /*Icons at the middle*/
 .icons {
-   padding-left: 250px;
-   padding-right: 250px;
+   position: relative;
+   padding-left: 23%;
+   padding-right: 23%;
+   width: 100%;
 }
+
 .icon {
    margin-right: 50px;
    font-size: 300%;
    color: #4c8930;
+   width: 100%;
 }
 /*Colour and margins for the feed*/
 .feed {
@@ -146,13 +159,21 @@ figcaption {
    padding-bottom: 50px;
 }
 /*Individual items*/
-.feedItems {
+.feedItems{
    padding-top: 25px;
    padding-bottom: 25px;
    background-color: white;
    border: 15px #eceeef;
    margin-top: 50px;
    width: 360px !important;
+
+   
+}
+.feedItems:first-of-type {
+   margin-left: 5%;
+}
+.feedItems:last-of-type {
+   margin-right: 5%;
 }
 /*The date part*/
 .feedItems span {
@@ -226,6 +247,7 @@ footer {
 }
 .bottomButton {
    margin-top: 30px;
+   margin-left: 10px;
 }
 .bottomButton a {
    padding-right: 20px;
